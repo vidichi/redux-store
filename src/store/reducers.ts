@@ -11,8 +11,10 @@ export function reducer(
     case 'ADD_TODO':{
       const todo = action.payload;
       const data = [...state.data, todo]
+      //...state just copies the state into a new object
       return {
         ...state,
+        // replace the data with the new values
         data: data
       };
     }
