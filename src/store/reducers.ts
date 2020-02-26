@@ -22,7 +22,7 @@ export function reducer(
       };
     }
     case fromActions.REMOVE_TODO:{
-      // this filter reurns a new array
+      // this filter returns a new array
       const data = state.data.filter(
         todo => todo.label !== action.payload.label
       );
