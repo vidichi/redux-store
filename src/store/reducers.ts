@@ -15,7 +15,8 @@ export function reducer(
       return {
         ...state,
         // replace the data with the new values
-        data: data
+        //data: data is same as following line
+        data
       };
     }
   }
